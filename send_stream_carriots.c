@@ -16,7 +16,7 @@ void send_stream_carriots(char *device, char *apikey, char *data) {
     int sockfd;
     struct sockaddr_in servaddr;
     char **pptr, poststr[MAXLINE + 1], sendline[MAXLINE + 1], recvline[MAXLINE + 1];
-    char *hname = "82.223.244.60"; // api.carriots.com
+    char *hname = "51.137.97.16"; // api.carriots.com
     char *uri = "/streams";
     ssize_t int_return_read;
     char *stream = "POST %s HTTP/1.0\r\nHost: %s\r\nContent-type: application/json\r\nContent-length: %d\r\nCarriots.apikey: %s\r\n\r\n%s";
